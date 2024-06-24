@@ -1,14 +1,9 @@
 
 <html>
-<head>
-<body>
+<head></head>
+<body backgroud-image:gossip.girl.jpg>
 
-<backgroud-image:gossipgirl.jpn>
-
-<body>
-
-<head>
-
+</body>
 
 
 

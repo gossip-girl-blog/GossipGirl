@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Fofoca</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('if/gossipgirl11.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+        .sugestao-box {
+            background-color: #313131;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 900px;
+            padding: 30px;
+            text-align: center;
+        }
+        .sugestao-box h2 {
+            margin-top: 0;
+            color: #333333;
+            font-size: 24px;
+        }
+        .sugestao-box p {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .sugestao-box textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #241717;
+            border-radius: 4px;
+            resize: none;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .sugestao-box button {
+            background-color: #757272;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .sugestao-box button:hover {
+            background-color: #e22828;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sugestao-box">
+    <h2><font color="white">XOXO, Gossip Girl </font></h2>
+    <p><font color="white">Qual será o próximo escândalo de Upper East Side?</font></p>
+    <textarea id="fofoca" placeholder="Digite sua fofoca aqui..."></textarea>
+    <br>
+    <button onclick="enviarfofoca()">Enviar fofoca</button>
+</div>
+
+<script>
+    function enviarfofoca() {
+        var fofocaTexto = document.getElementById('fofoca').value;
+        
+        if (fofocaTexto.trim() === '') {
+            alert('Por favor, digite sua fofoca antes de enviar.');
+        } else {
+            alert('Fofoca enviada! ' + fofocaTexto);
+            document.getElementById('fofoca').value = ''; // Limpar o campo após enviar
+        }
+    }
+</script>
+
+</body>
+</html>
